@@ -1,0 +1,382 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-style: bold;
+  font-weight: bold;
+  background-color: #ebebeb;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 12px;
+}
+
+div.top-header {
+  padding: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+header {
+  background-color: #26bfea;
+}
+
+header div.logo {
+  padding: 10px;
+  width: 50%;
+}
+
+header nav {
+  font-size: 12px;
+  display: none;
+}
+
+header ul li {
+  list-style-type: none;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+header .form {
+  width: 50%;
+}
+
+header .form .input {
+  background-color: #fff;
+  border: 1px solid #000;
+  outline: none;
+  color: #666;
+  padding: 2px;
+  position: relative;
+}
+
+header .form .input button {
+  position: absolute;
+  width: 23px;
+  right: 0px;
+  top: 4px;
+  border: none;
+}
+
+header .form .submit {
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #666;
+  width: 10%;
+}
+
+header div.top-header p {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#logoagus {
+  width: 50%;
+}
+
+div.burger-menu {
+  text-align: center;
+}
+
+div.burger-menu i {
+  background-color: #0044aa;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  height: 40px;
+  margin: 10px 0px 20px 0px;
+  padding: 10px;
+  width: 40px;
+}
+
+div.burger-menu button {
+  border: none;
+  background-color: inherit;
+}
+
+article div.main-article {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid #ebebeb;
+  padding: 15px;
+}
+
+.price {
+  width: 30%;
+  font-size: 18px;
+}
+
+.discount,
+.description {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+h3,
+.description {
+  color: #666;
+}
+
+.description {
+  display: none;
+  margin-top: 20px;
+}
+
+.description-container {
+  height: 0;
+  opacity: 0;
+  transition: opacity 200ms ease-in, height 300ms ease-in;
+}
+
+
+section.banner img {
+  width: 100%;
+}
+
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+main section article {
+  background-color: #fff;
+  margin: 10px 0px;
+}
+
+main section article:hover{
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+main section article:hover .description-container{
+  height: 40px;
+  opacity: 1;
+}
+
+main section article:hover .truck-icon {
+  transform: rotate(-90deg);
+}
+
+main section article img {
+  width: 100%;
+}
+
+main section article i,
+.discount {
+  width: 70%;
+  color: #39b54a;
+}
+
+.truck-icon {
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #FFF;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+  transition: transform 300ms ease;
+}
+
+main section h3 {
+  margin: 20px 0px;
+}
+
+header ul {
+  margin-bottom: 16px;
+}
+
+main.login form #txfUser:invalid {
+  border: 1px solid red;
+}
+
+main.login form {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+main.login form input {
+  margin: 25px;
+  border-radius: 6px;
+  width: 65%;
+  padding: 15px;
+  text-align: center;
+}
+
+main.login form button {
+  background-color: #0044aa;
+  border-radius: 5px;
+  color: #fff;
+  padding: 10px;
+  transition: background-color 300ms ease;
+}
+
+main.login form button:hover {
+  background-color: #0022AA ;
+}
+
+main.register form {
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+}
+
+main.register form input {
+  border-radius: 6px;
+  margin: 17px;
+  padding: 5px;
+  width: 65%;
+}
+
+main.register div.profile {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 17px;
+  align-items: center;
+}
+
+main.register div.interests {
+  margin: 17px;
+}
+
+main.register div.interests div {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row-reverse;
+}
+
+main.register form button {
+  background-color: #0044aa;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px;
+  margin: 11px;
+}
+
+main.register form button.reset {
+  background-color: red;
+}
+
+
+footer {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color: #FFF;
+}
+
+footer article {
+  text-align: center;
+  padding: 13px;
+  margin: 20px;
+}
+
+
+footer .fas {
+  font-size: 20px;
+  color: #0044aa;
+}
+
+
+
+
+@media (min-width: 361px) {
+  main section article .description {
+    display: block;
+  }
+
+  /* main section article {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  } */
+
+  main section .products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px 16px;
+    justify-content: center;
+  }
+
+  main section .products article {
+    width: 48%;
+  }
+}
+
+@media (min-width: 769px) {
+  main section .products article {
+    width: 24%;
+  }
+
+  header div.logo {
+    width: 30%;
+  }
+
+  header .form {
+    width: 30%;
+  }
+
+  header div.top-header p {
+    width: 40%;
+    margin-top: 0;
+  }
+
+  header nav {
+    display: flex;
+  }
+
+  header nav ul {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  header nav ul:nth-child(1) {
+    padding-left: 64px;
+  }
+
+  header nav ul:nth-child(2) {
+    justify-content: flex-end;
+    padding-right: 64px;
+  }
+
+  div.burger-menu {
+    display: none;
+  }
+
+  footer article {
+    width: 27%;
+  }
+  
+}
+
+@media (min-width: 1440px){
+  footer article {
+    width: 30%;
+}
+}
